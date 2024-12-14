@@ -76,22 +76,6 @@ def GradiantDescient(x,y,theta,alpha,iters):
         cost[i] = ComputeCost(x, y, theta)
     return theta , cost
 
-# def GradiantDescient(x, y, theta, alpha, iters):
-#     temp = np.zeros(theta.shape)
-#     parameters = theta.shape[1]
-#     cost = np.zeros(iters)
-    
-#     for i in range(iters):
-#         error = (x * theta.T) - y
-#         for j in range(parameters):
-#             term = np.multiply(error, x[:, j])
-#             temp[0, j] = theta[0, j] - ((alpha / len(x)) * np.sum(term))
-#         theta = temp
-#         cost[i] = ComputeCost(x, y, theta)
-    
-#     return theta, cost
-
-
 alpha = 0.01    
 iters = 1000
 
